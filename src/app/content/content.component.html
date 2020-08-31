@@ -1,0 +1,54 @@
+<div class="back">
+  <div class="container" >
+    <h1 class="titulo"><strong>Os vencedores da Nova Realidade</strong> </h1>
+    <h2 class="second"> Investir em Bitcoin, tendo informações de Qualidade</h2><br><br>
+  </div>
+  <div *ngIf="listCoins">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4 .col-md-8">
+          <table mdbTable>
+            <thead class="black  white-text">
+              <tr>
+                <th><strong>iD</strong> </th>
+                <th><strong>Name</strong></th>
+                <th><strong>Info</strong></th>
+                <th><strong>History</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr mdbTableCol *ngFor="let moeda of listCoins">
+                <th scope="row">{{moeda.id}}</th>
+                <td>{{moeda.name}}</td>
+                <td><button  (click)="getCoin(moeda.id)" type="button" mdbBtn color="primary" mdbWavesEffect><strong>Info</strong></button></td>
+                <td><button (click)="getHistory(moeda.id)" type="button" mdbBtn color="warning" mdbWavesEffect><strong>History</strong> </button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col-4 .col-md-8">
+          <div *ngIf="coin">
+            <ul>
+              <li style="list-style:none;">
+                <div class="coin" [innerHTML]="coin.description"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-4 .col-md-8">
+          <table *ngIf="history" mdbTable bordered="true">
+            <tr>
+              <th scope="col text-center"><strong>Day</strong> </th>
+              <th scope="col text-center"><strong>Price</strong>  </th>
+            </tr>
+            <tr mdbTableCol *ngFor="let hist of history">
+              <td>{{hist.timestamp | date: 'dd-MM-yyyy'}}</td>
+              <td>{{hist.price}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
