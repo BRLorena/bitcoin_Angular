@@ -1,6 +1,33 @@
-# Bitcoin
+# <img src="img/bitcoinLogo.png" width="50px" height="40px"> Bitcoin App
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
+
+<a href="https://brlorena.github.io/bitcoin_Angular/">Acess and Check Yourself 😉</a>
+<br><br>
+
+#  💻 Funcionalites
+
+This is a project to work with HTTP REQUEST, where all the information is received by an API. I use models and services to work with information received and to design the presentation used HTML, Bootstrap. <br>
+
+<img src="img/gifBitcoin.gif"> <br><br>
+
+# 📷 Pages
+<img src="img/main1.png"><br>
+<img src="img/main2.png"><br>
+<img src="img/invest.png"><br><br>
+
+# Implementations
+
+<br>
+
+# 🚀 Tecnologies
+
+- Angular version 10.0.4.
+- HTML/CSS 
+- Bootstrap
+- JavaScript
+- TypeScript
+
 
 ## Development server
 
