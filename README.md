@@ -20,7 +20,7 @@ This is a project to work with HTTP REQUEST, where all the information is receiv
 
 <br>
 
-# 🚀 Tecnologies
+# 🚀 Technologies
 
 - Angular version 10.0.4.
 - HTML/CSS 
